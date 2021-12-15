@@ -11,7 +11,7 @@ export const ListLinks = ({ links }) => {
       <thead>
       <tr>
         <th>№</th>
-        <th>Оригин</th>
+        <th>Оригинал</th>
         <th>Сокращение</th>
         <th></th>
       </tr>
