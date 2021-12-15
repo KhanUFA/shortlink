@@ -49,7 +49,7 @@ router.post(
     try{
         const errors = validationResult(req)
         if(!errors.isEmpty()){
-            return res.result(400).json({errors: errors.array(), message: 'Некоректные данные при входе!'})
+            return res.status(400).json({message: 'Введите данные'})
         }
 
         const {email, password} = req.body

@@ -16,7 +16,6 @@ export const useHttp = () => {
       const data = await response.json()
 
       if (!response.ok) {
-        console.log("Catch", data.message)
         throw new Error(data.message || 'Проблема в http hook')
       }
 
@@ -24,7 +23,7 @@ export const useHttp = () => {
 
       return data
     } catch (e) {
-      console.log("Catch", e.message)
+      console.log("Client","Проблема в http hook: ", e.message)
       setLoading(false)
       setError(e.message)
       throw e
