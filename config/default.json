@@ -1,0 +1,6 @@
+{
+  "jwtSecret": "BPO1802",
+  "port": 5000,
+  "mongoURL":"mongodb+srv://Khan:xBUfH27R4gnFeMl0@cluster0.nqgmv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "baseUrl": "http://localhost:5000"
+}
